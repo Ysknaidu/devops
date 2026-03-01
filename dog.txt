@@ -1,1 +1,22 @@
 modifyiing job
+#include <stdlib.h>
+#include <stdint.h>
+
+void spi_transfer() {
+    uint8_t *tx_buffer;
+
+    tx_buffer = (uint8_t *)malloc(100);   // allocate 100 bytes
+
+    if (tx_buffer == NULL) {
+        return;
+    }
+
+    // Fill buffer
+    for (int i = 0; i < 100; i++) {
+        tx_buffer[i] = i;
+    }
+
+    // SPI transfer happens here...
+
+    free(tx_buffer);
+}
