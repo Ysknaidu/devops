@@ -2,6 +2,8 @@ modifyiing job
 #include <stdlib.h>
 #include <stdint.h>
 
+hi ashok 
+
 void spi_transfer() {
     uint8_t *tx_buffer;
 
